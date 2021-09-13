@@ -1,0 +1,111 @@
+.departments {
+
+  text-align: center;
+  padding:50px 25px;
+background-color: white !important;
+
+}
+
+.departments  .section-title{
+  margin-bottom: 50px;
+}
+.departments .nav-tabs {
+  border: 0;
+}
+
+.departments .nav-link {
+  border: 0;
+  padding: 10px;
+  color: #555555;
+  border-radius: 0;
+  border-right: 5px solid #fff;
+  // border-left: 5px solid #fff;
+
+}
+
+.departments .nav-link h4 {
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.departments .nav-link p {
+  font-size: 14px;
+  margin-bottom: 0;
+  font-family: 'IRANSans_Light' !important;
+
+}
+
+.departments .nav-link:hover h4 {
+  color: #0cb1c0;
+}
+
+.departments .nav-link.active {
+  background: #f7fcfc;
+  border-color: #0cb1c0;
+}
+
+.departments .nav-link.active h4 {
+  color: #0cb1c0;
+}
+
+.departments .tab-pane.active {
+  -webkit-animation: slide-down 0.5s ease-out;
+  animation: slide-down 0.5s ease-out;
+}
+
+.departments .tab-pane img {
+  float: right;
+  max-width: 300px;
+  padding: 0 15px 15px 0;
+  margin-left: 10px;
+}
+.departments .tab-pane .font-italic {
+  text-align:center;
+}
+
+.departments .tab-pane p {
+  text-align:justify;
+  font-family: 'IRANSans_Light' !important;
+ font-style:18px;
+}
+@media (max-width: 768px) {
+  .departments .tab-pane img {
+    float: none;
+    padding: 0 0 15px 0;
+    max-width: 100%;
+  }
+}
+
+.departments .tab-pane h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #0cb1c0;
+}
+
+.departments .tab-pane p {
+  color: #777777;
+}
+
+.departments .tab-pane p:last-child {
+  margin-bottom: 0;
+}
+
+@-webkit-keyframes slide-down {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

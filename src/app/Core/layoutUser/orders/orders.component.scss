@@ -1,0 +1,22 @@
+.container-fluid{
+  margin-top: 10px;
+}
+:host::ng-deep.ui-panel-titlebar{
+  background: #FF8800!important;
+  color: #fff!important;
+  font-size: 12px;
+  font-family: IRANSans_Bold;
+}
+:host::ng-deep .container-fluid th.ng-star-inserted {
+  font-family: IRANSans_Bold;
+  text-align: center;
+}
+tr th{
+  font-size: 14px;
+}
+tr td{
+  font-size: 12px;
+}
+#text-delete-dialog{
+  font-family: IRANSans_Light!important;
+}

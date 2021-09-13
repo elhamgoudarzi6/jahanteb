@@ -1,0 +1,29 @@
+<div class="container-fluid mt-5 mb-5">
+  <div class="header">
+    <h3 class="header-title">
+      جدید ترین خبرها
+    </h3>
+    <div class="divider"></div>
+    <a [routerLink]="['/news']"  class="btn-all">مشاهده همه</a>
+  </div>
+
+<section class="blogs mt-5">
+  <div class="container">
+    <div class=" box" *ngFor="let i of latestNews">
+    <div class="post-item clearfix">
+    <img [src]="i['image']" [alt]="i['imageDescription']">
+    <h4><a [routerLink]="['/news-detail',i['_id']]">{{i['title']}}</a></h4>
+    <p>{{i['brief']}}</p>
+    <div class="blogs-meta">
+      <ul>
+        <li class="d-flex align-items-center"><i class="pi pi-user"></i><a>مدیر</a></li>
+        <li class="d-flex align-items-center"><i class="far fa-clock"></i><a><time datetime="1400-2-24">{{i['date']}}</time></a></li>
+        <li class="d-flex align-items-center"><i class="pi pi-tags"></i><a>{{i['tags']}}</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+
