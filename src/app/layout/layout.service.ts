@@ -12,30 +12,30 @@ export class LayoutService {
 
   // #region category
   getAllCategory(): any {
-    return this.http.get('http://api.jahantebkhoram.ir/api/v1/user/getAllCategory');
+    return this.http.get('https://api.jahantebkhoram.ir/api/v1/user/getAllCategory');
   }
 
   allProductBySubCategoryID(id: any): any {
-    return this.http.get('http://api.jahantebkhoram.ir/api/v1/user/allProductBySubCategoryID/' + id);
+    return this.http.get('https://api.jahantebkhoram.ir/api/v1/user/allProductBySubCategoryID/' + id);
   }
 
 //#endregion
 
   // #region news
   getAllNews(): any {
-    return this.http.get('http://api.jahantebkhoram.ir/api/v1/user/getAllNews');
+    return this.http.get('https://api.jahantebkhoram.ir/api/v1/user/getAllNews');
   }
 
   getLatestNews(): any {
-    return this.http.get('http://api.jahantebkhoram.ir/api/v1/user/getLatestNews');
+    return this.http.get('https://api.jahantebkhoram.ir/api/v1/user/getLatestNews');
   }
 
   getNews(id: any): any {
-    return this.http.get('http://api.jahantebkhoram.ir/api/v1/user/getNews/' + id);
+    return this.http.get('https://api.jahantebkhoram.ir/api/v1/user/getNews/' + id);
   }
 
   getAllTagNews(): any {
-    return this.http.get('http://api.jahantebkhoram.ir/api/v1/user/getAllTagNews');
+    return this.http.get('https://api.jahantebkhoram.ir/api/v1/user/getAllTagNews');
   }
   // #endregion
 
@@ -45,19 +45,19 @@ export class LayoutService {
   }
 
   getNewestProduct(): any {
-    return this.http.get('http://api.jahantebkhoram.ir/api/v1/user/newestProduct');
+    return this.http.get('https://api.jahantebkhoram.ir/api/v1/user/newestProduct');
   }
 
   getProduct(id: any): any {
-    return this.http.get('http://api.jahantebkhoram.ir/api/v1/user/getProduct/' + id);
+    return this.http.get('https://api.jahantebkhoram.ir/api/v1/user/getProduct/' + id);
   }
 
   getAllProduct(): any {
-    return this.http.get('http://api.jahantebkhoram.ir/api/v1/user/getAllProduct');
+    return this.http.get('https://api.jahantebkhoram.ir/api/v1/user/getAllProduct');
   }
 
   allCommentForProduct(id: any): any {
-    return this.http.get('http://api.jahantebkhoram.ir/api/v1/user/allCommentForProduct/' + id);
+    return this.http.get('https://api.jahantebkhoram.ir/api/v1/user/allCommentForProduct/' + id);
   }
 
   countComment(id: any): any {
@@ -65,33 +65,33 @@ export class LayoutService {
   }
 
   registerComment(data: any): any {
-    return this.http.post('http://api.jahantebkhoram.ir/api/v1/user/registerComment', data);
+    return this.http.post('https://api.jahantebkhoram.ir/api/v1/user/registerComment', data);
   }
 
   registerOrder(data: any): any {
-    return this.http.post('http://api.jahantebkhoram.ir/api/v1/user/registerOrder', data);
+    return this.http.post('https://api.jahantebkhoram.ir/api/v1/user/registerOrder', data);
   }
 
   addSmsSubscription(data: any): any {
-    return this.http.post('http://api.jahantebkhoram.ir/api/v1/user/addSmsSubscription', data);
+    return this.http.post('https://api.jahantebkhoram.ir/api/v1/user/addSmsSubscription', data);
   }
 
   addEmailSubscription(data: any): any {
-    return this.http.post('http://api.jahantebkhoram.ir/api/v1/user/addEmailSubscription', data);
+    return this.http.post('https://api.jahantebkhoram.ir/api/v1/user/addEmailSubscription', data);
   }
 
   getAllFaq(): any {
-    return this.http.get('http://api.jahantebkhoram.ir/api/v1/user/getAllFaq');
+    return this.http.get('https://api.jahantebkhoram.ir/api/v1/user/getAllFaq');
   }
 
   postContactUs(data: any) {
-    return this.http.post('http://api.jahantebkhoram.ir/api/v1/user/registerContactUs', data);
+    return this.http.post('https://api.jahantebkhoram.ir/api/v1/user/registerContactUs', data);
   }
 
   advanceSearchProduct(data: any): any {
-    return this.http.post('http://api.jahantebkhoram.ir/api/v1/user/advanceSearchProduct', data);
+    return this.http.post('https://api.jahantebkhoram.ir/api/v1/user/advanceSearchProduct', data);
   }
   getAllCatalog(): any {
-    return this.http.get('http://api.jahantebkhoram.ir/api/v1/user/getCatalog');
+    return this.http.get('https://api.jahantebkhoram.ir/api/v1/user/getCatalog');
   }
 }

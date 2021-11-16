@@ -1,7 +1,7 @@
 .hero {
   width: 100%;
   height: 55vh;
-  background:linear-gradient(rgba(#00c7a0, 0.40),rgba(#00ddb2, 0.30)),
+  background:linear-gradient(rgba(#0db1c0, 0.60),rgba(#05414f, 0.30)),
   url("../../../../assets/images/slide-3.jpg") top center;
   background-size: cover;
   position: relative;
@@ -19,10 +19,10 @@
   font-weight: 700;
   line-height: 56px;
   text-transform: uppercase;
-  color: #08404f;
+  color: #ffffff;
 }
 .hero h2 {
-  color: #08404f;
+  color: #ffffff;
   margin: 20px 0 0 0;
   font-size: 28px;
   font-family: 'IRANSans_Light' !important;
@@ -37,14 +37,15 @@
   display: inline-block;
   padding: 12px 35px;
   margin-top: 50px;
-  border-radius: 50px;
+  border-radius: 5px;
   transition: 0.5s;
   color: #fff;
-  background: #00c7a0;
+  border: #fff solid 2px;
 }
 
 .hero .btn-get-started:hover {
-  background: #0cb1c0;
+  background: #fff;
+  color:#0db1c0;
   text-decoration: none;
 }
 
@@ -76,91 +77,5 @@
 @media (max-height: 500px) {
   .hero {
     height: auto;
-  }
-}
-.hero {
-  width: 100%;
-  background: url("../../../../assets/images/header.png") top center no-repeat;
-  background-size: cover;
-}
-
-.hero h1 {
-  margin: 20px 0 10px;
-  font-size: 48px;
-  font-weight: 700;
-  color: #05414f;
-}
-
-.hero h2 {
-  color: #444444;
-  margin: 25px 0 0 0;
-  font-size: 26px;
-  margin: 30px 0 10px;
-
-}
-
-.hero .btn-get-started {
-  margin-top: 40px;
-  line-height: 0;
-  padding: 15px 40px;
-  border-radius: 4px;
-  transition: 0.5s;
-  color: #fff;
-  background: #0cb1c0;
-  box-shadow: 0px 5px 30px rgba(78, 94, 241, 0.4);
-}
-
-.hero .btn-get-started span {
-  font-weight: 600;
-  font-size: 16px;
-  letter-spacing: 1px;
-}
-
-.hero .btn-get-started i {
-  margin-right: 8px;
-  font-size: 18px;
-  transition: 0.3s;
-}
-
-.hero .btn-get-started:hover i {
-  transform: translateX(5px);
-}
-
-.hero .hero-img {
-  text-align: right;
-}
-
-@media (min-width: 1024px) {
-  .hero {
-    background-attachment: fixed;
-  }
-}
-
-@media (max-width: 991px) {
-  .hero {
-    height: auto;
-    padding: 120px 0 60px 0;
-  }
-  .hero .hero-img {
-    text-align: center;
-    margin-top: 80px;
-  }
-  .hero .hero-img img {
-    width: 80%;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero {
-    text-align: center;
-  }
-  .hero h1 {
-    font-size: 32px;
-  }
-  .hero h2 {
-    font-size: 24px;
-  }
-  .hero .hero-img img {
-    width: 100%;
   }
 }

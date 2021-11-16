@@ -10,19 +10,19 @@ export class UserService {
   }
 
   onDisplayBasket(data: any) {
-    return this.http.post('http://api.jahantebkhoram.ir/api/v1/user/basketList', data);
+    return this.http.post('https://api.jahantebkhoram.ir/api/v1/user/basketList', data);
   }
 
   getPayment(data: any) {
-    return this.http.post('http://api.jahantebkhoram.ir/api/v1/user/getPayment', data);
+    return this.http.post('https://api.jahantebkhoram.ir/api/v1/user/getPayment', data);
   }
 
   getUser(id: any) {
-    return this.http.get('http://api.jahantebkhoram.ir/api/v1/user/getUser/'+id);
+    return this.http.get('https://api.jahantebkhoram.ir/api/v1/user/getUser/'+id);
   }
 
   updateUser(id: any, data: any) {
-    return this.http.put('http://api.jahantebkhoram.ir/api/v1/user/updateUser/'+id, data);
+    return this.http.put('https://api.jahantebkhoram.ir/api/v1/user/updateUser/'+id, data);
   }
 
   changePasswordUser(id: any, data: any) {
@@ -30,29 +30,29 @@ export class UserService {
   }
 
   uploadProfileFile(image: any) {
-    return this.http.post('http://api.jahantebkhoram.ir/api/v1/user/upload', image);
+    return this.http.post('https://api.jahantebkhoram.ir/api/v1/user/upload', image);
   }
 
   getOrder(orderId: any) {
-    return this.http.get('http://api.jahantebkhoram.ir/api/v1/user/getOrder/' + orderId);
+    return this.http.get('https://api.jahantebkhoram.ir/api/v1/user/getOrder/' + orderId);
   }
 
   getAllOrderByUser(userId: any) {
     return this.http.get('http://api.jahantebkhoram.ir/api/v1/user/getAllOrderByUser/' + userId);
   }
   deleteOrder(orderID: any) {
-    return this.http.delete('http://api.jahantebkhoram.ir/api/v1/user/deleteOrder/' + orderID);
+    return this.http.delete('https://api.jahantebkhoram.ir/api/v1/user/deleteOrder/' + orderID);
   }
   updateOrder(orderID: any,data:any) {
-    return this.http.put('http://api.jahantebkhoram.ir/api/v1/user/updateOrder/' + orderID,data);
+    return this.http.put('https://api.jahantebkhoram.ir/api/v1/user/updateOrder/' + orderID,data);
   }
   getDetailOrder(orderID: any) {
-    return this.http.get('http://api.jahantebkhoram.ir/api/v1/user/getOrder/' + orderID);
+    return this.http.get('https://api.jahantebkhoram.ir/api/v1/user/getOrder/' + orderID);
   }
   changeMobileNumber(id: any, data: any) {
-    return this.http.put('http://api.jahantebkhoram.ir/api/v1/user/changeMobileNumber/' + id, data);
+    return this.http.put('https://api.jahantebkhoram.ir/api/v1/user/changeMobileNumber/' + id, data);
   }
   sendCodeToEmail(data: any) {
-    return this.http.post('http://api.jahantebkhoram.ir/api/v1/user/sendCodeToEmail', data);
+    return this.http.post('https://api.jahantebkhoram.ir/api/v1/user/sendCodeToEmail', data);
   }
 }

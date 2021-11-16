@@ -9,37 +9,37 @@ export class AdminService {
 
   login(data: any): any {
     return this.http.post(
-      'http://api.jahantebkhoram.ir/api/v1/admin/loginAdmin',
+      'https://api.jahantebkhoram.ir/api/v1/admin/loginAdmin',
       data
     );
   }
   changePassword(id: any, data: any): any {
     return this.http.put(
-      'http://api.jahantebkhoram.ir/api/v1/admin/changePassword/' + id,
+      'https://api.jahantebkhoram.ir/api/v1/admin/changePassword/' + id,
       data
     );
   }
   changeUsername(id: any, data: any): any {
     return this.http.put(
-      'http://api.jahantebkhoram.ir/api/v1/admin/changeUsername/' + id,
+      'https://api.jahantebkhoram.ir/api/v1/admin/changeUsername/' + id,
       data
     );
   }
   resetPassword(data: any): any {
     return this.http.put(
-      'http://api.jahantebkhoram.ir/api/v1/admin/resetPassword',
+      'https://api.jahantebkhoram.ir/api/v1/admin/resetPassword',
       data
     );
   }
   uploadFile(data: any): any {
     return this.http.post(
-      'http://api.jahantebkhoram.ir/api/v1/admin/upload',
+      'https://api.jahantebkhoram.ir/api/v1/admin/upload',
       data
     );
   }
   uploadMultiFiles(data: any): any {
     return this.http.post(
-      'http://api.jahantebkhoram.ir/api/v1/admin/multiUpload',
+      'https://api.jahantebkhoram.ir/api/v1/admin/multiUpload',
       data
     );
   }
@@ -47,24 +47,24 @@ export class AdminService {
   //#region Administrator
   getAllAdmininstrators(): any {
     return this.http.get(
-      'http://api.jahantebkhoram.ir/api/v1/admin/getAllAdmin'
+      'https://api.jahantebkhoram.ir/api/v1/admin/getAllAdmin'
     );
   }
   addAdmin(data: any): any {
     return this.http.post(
-      'http://api.jahantebkhoram.ir/api/v1/admin/registerAdmin',
+      'https://api.jahantebkhoram.ir/api/v1/admin/registerAdmin',
       data
     );
   }
   editAdmin(id: any, data: any): any {
     return this.http.put(
-      'http://api.jahantebkhoram.ir/api/v1/admin/updateAdmin/' + id,
+      'https://api.jahantebkhoram.ir/api/v1/admin/updateAdmin/' + id,
       data
     );
   }
   deleteAdmin(id: any): any {
     return this.http.delete(
-      'http://api.jahantebkhoram.ir/api/v1/admin/deleteAdmin/' + id
+      'https://api.jahantebkhoram.ir/api/v1/admin/deleteAdmin/' + id
     );
   }
   //#endregion
@@ -72,43 +72,43 @@ export class AdminService {
   //#region Categories
   getAllCategories(): any {
     return this.http.get(
-      'http://api.jahantebkhoram.ir/api/v1/admin/getAllCategory'
+      'https://api.jahantebkhoram.ir/api/v1/admin/getAllCategory'
     );
   }
 
   addCategory(data: any): any {
     return this.http.post(
-      'http://api.jahantebkhoram.ir/api/v1/admin/registerCategory',
+      'https://api.jahantebkhoram.ir/api/v1/admin/registerCategory',
       data
     );
   }
   editCategory(id: any, data: any): any {
     return this.http.put(
-      'http://api.jahantebkhoram.ir/api/v1/admin/updateCategory/' + id,
+      'https://api.jahantebkhoram.ir/api/v1/admin/updateCategory/' + id,
       data
     );
   }
   deleteCategory(id: any): any {
     return this.http.delete(
-      'http://api.jahantebkhoram.ir/api/v1/admin/deleteCategory/' + id
+      'https://api.jahantebkhoram.ir/api/v1/admin/deleteCategory/' + id
     );
   }
 
   addSubCategory(data: any): any {
     return this.http.post(
-      'http://api.jahantebkhoram.ir/api/v1/admin/registerSubCategory',
+      'https://api.jahantebkhoram.ir/api/v1/admin/registerSubCategory',
       data
     );
   }
   editSubCategory(id: any, data: any): any {
     return this.http.put(
-      'http://api.jahantebkhoram.ir/api/v1/admin/updateSubCategory/' + id,
+      'https://api.jahantebkhoram.ir/api/v1/admin/updateSubCategory/' + id,
       data
     );
   }
   deleteSubCategory(id: any): any {
     return this.http.delete(
-      'http://api.jahantebkhoram.ir/api/v1/admin/deleteSubCategory/' + id
+      'https://api.jahantebkhoram.ir/api/v1/admin/deleteSubCategory/' + id
     );
   }
   //#endregion
@@ -116,25 +116,25 @@ export class AdminService {
   //#region News
   getAllNews(): any {
     return this.http.get(
-      'http://api.jahantebkhoram.ir/api/v1/admin/getAllNews'
+      'https://api.jahantebkhoram.ir/api/v1/admin/getAllNews'
     );
   }
 
   addNews(data: any): any {
     return this.http.post(
-      'http://api.jahantebkhoram.ir/api/v1/admin/registerNews',
+      'https://api.jahantebkhoram.ir/api/v1/admin/registerNews',
       data
     );
   }
   editNews(id: any, data: any): any {
     return this.http.put(
-      'http://api.jahantebkhoram.ir/api/v1/admin/updateNews/' + id,
+      'https://api.jahantebkhoram.ir/api/v1/admin/updateNews/' + id,
       data
     );
   }
   deleteNews(id: any): any {
     return this.http.delete(
-      'http://api.jahantebkhoram.ir/api/v1/admin/deleteNews/' + id
+      'https://api.jahantebkhoram.ir/api/v1/admin/deleteNews/' + id
     );
   }
 
@@ -143,25 +143,25 @@ export class AdminService {
   //#region Products
   getAllProducts(): any {
     return this.http.get(
-      'http://api.jahantebkhoram.ir/api/v1/admin/getAllProduct'
+      'https://api.jahantebkhoram.ir/api/v1/admin/getAllProduct'
     );
   }
 
   addProduct(data: any): any {
     return this.http.post(
-      'http://api.jahantebkhoram.ir/api/v1/admin/registerProduct',
+      'https://api.jahantebkhoram.ir/api/v1/admin/registerProduct',
       data
     );
   }
   editProduct(id: any, data: any): any {
     return this.http.put(
-      'http://api.jahantebkhoram.ir/api/v1/admin/updateProduct/' + id,
+      'https://api.jahantebkhoram.ir/api/v1/admin/updateProduct/' + id,
       data
     );
   }
   deleteProduct(id: any): any {
     return this.http.delete(
-      'http://api.jahantebkhoram.ir/api/v1/admin/deleteProduct/' + id
+      'https://api.jahantebkhoram.ir/api/v1/admin/deleteProduct/' + id
     );
   }
 
@@ -170,28 +170,28 @@ export class AdminService {
   //#region Comment
   getAllComments(): any {
     return this.http.get(
-      'http://api.jahantebkhoram.ir/api/v1/admin/getAllComment'
+      'https://api.jahantebkhoram.ir/api/v1/admin/getAllComment'
     );
   }
   commentCount(id: any): any {
     return this.http.get(
-      'http://api.jahantebkhoram.ir/api/v1/admin/countComment/' + id
+      'https://api.jahantebkhoram.ir/api/v1/admin/countComment/' + id
     );
   }
   deleteComment(id: any): any {
     return this.http.delete(
-      'http://api.jahantebkhoram.ir/api/v1/admin/deleteComment/' + id
+      'https://api.jahantebkhoram.ir/api/v1/admin/deleteComment/' + id
     );
   }
   activeOrDeactiveComment(id: any, data: any): any {
     return this.http.put(
-      'http://api.jahantebkhoram.ir/api/v1/admin/activeOrDeactiveComment/' + id,
+      'https://api.jahantebkhoram.ir/api/v1/admin/activeOrDeactiveComment/' + id,
       data
     );
   }
   replyComment(id: any, data: any): any {
     return this.http.put(
-      'http://api.jahantebkhoram.ir/api/v1/admin/replyComment/' + id,
+      'https://api.jahantebkhoram.ir/api/v1/admin/replyComment/' + id,
       data
     );
   }
@@ -200,24 +200,24 @@ export class AdminService {
   //#region Discounts
   getAllDiscounts(): any {
     return this.http.get(
-      'http://api.jahantebkhoram.ir/api/v1/admin/getAllDiscount'
+      'https://api.jahantebkhoram.ir/api/v1/admin/getAllDiscount'
     );
   }
   addDiscount(data: any): any {
     return this.http.post(
-      'http://api.jahantebkhoram.ir/api/v1/admin/registerDiscount',
+      'https://api.jahantebkhoram.ir/api/v1/admin/registerDiscount',
       data
     );
   }
   editDiscount(id: any, data: any): any {
     return this.http.put(
-      'http://api.jahantebkhoram.ir/api/v1/admin/updateDiscount/' + id,
+      'https://api.jahantebkhoram.ir/api/v1/admin/updateDiscount/' + id,
       data
     );
   }
   deleteDiscount(id: any): any {
     return this.http.delete(
-      'http://api.jahantebkhoram.ir/api/v1/admin/deleteDiscount/' + id
+      'https://api.jahantebkhoram.ir/api/v1/admin/deleteDiscount/' + id
     );
   }
   //#endregion
@@ -225,29 +225,29 @@ export class AdminService {
   //#region Users
   getAllUsers(): any {
     return this.http.get(
-      'http://api.jahantebkhoram.ir/api/v1/admin/getAllUser'
+      'https://api.jahantebkhoram.ir/api/v1/admin/getAllUser'
     );
   }
   getUser(id: any): any {
     return this.http.get(
-      'http://api.jahantebkhoram.ir/api/v1/admin/getUser/' + id
+      'https://api.jahantebkhoram.ir/api/v1/admin/getUser/' + id
     );
   }
   addUser(data: any): any {
     return this.http.post(
-      'http://api.jahantebkhoram.ir/api/v1/admin/registerUser',
+      'https://api.jahantebkhoram.ir/api/v1/admin/registerUser',
       data
     );
   }
   editUser(id: any, data: any): any {
     return this.http.put(
-      'http://api.jahantebkhoram.ir/api/v1/admin/updateUser/' + id,
+      'https://api.jahantebkhoram.ir/api/v1/admin/updateUser/' + id,
       data
     );
   }
   deleteUser(id: any): any {
     return this.http.delete(
-      'http://api.jahantebkhoram.ir/api/v1/admin/deleteUser/' + id
+      'https://api.jahantebkhoram.ir/api/v1/admin/deleteUser/' + id
     );
   }
   //#endregion
@@ -255,40 +255,40 @@ export class AdminService {
   //#region Orders
   getAllOrders(): any {
     return this.http.get(
-      'http://api.jahantebkhoram.ir/api/v1/admin/getAllOrder'
+      'https://api.jahantebkhoram.ir/api/v1/admin/getAllOrder'
     );
   }
   getOrder(id: any): any {
     return this.http.get(
-      'http://api.jahantebkhoram.ir/api/v1/admin/getOrder/' + id
+      'https://api.jahantebkhoram.ir/api/v1/admin/getOrder/' + id
     );
   }
   editOrderStatus(id: any, data: any): any {
     return this.http.put(
-      'http://api.jahantebkhoram.ir/api/v1/admin/updateStatusOrder/' + id,
+      'https://api.jahantebkhoram.ir/api/v1/admin/updateStatusOrder/' + id,
       data
     );
   }
   deleteOrder(id: any): any {
     return this.http.delete(
-      'http://api.jahantebkhoram.ir/api/v1/admin/deleteOrder/' + id
+      'https://api.jahantebkhoram.ir/api/v1/admin/deleteOrder/' + id
     );
   }
   //#endregion
   //#region ContactFormMessages
   getAllContactFormMessages(): any {
     return this.http.get(
-      'http://api.jahantebkhoram.ir/api/v1/admin/getAllContactUs'
+      'https://api.jahantebkhoram.ir/api/v1/admin/getAllContactUs'
     );
   }
   getContactFormMessage(id: any): any {
     return this.http.get(
-      'http://api.jahantebkhoram.ir/api/v1/admin/getContactUs/' + id
+      'https://api.jahantebkhoram.ir/api/v1/admin/getContactUs/' + id
     );
   }
   deleteContactFormMessage(id: any): any {
     return this.http.delete(
-      'http://api.jahantebkhoram.ir/api/v1/admin/deleteContactUs/' + id
+      'https://api.jahantebkhoram.ir/api/v1/admin/deleteContactUs/' + id
     );
   }
   //#endregion
@@ -296,39 +296,39 @@ export class AdminService {
   //#region Subscriptions
   getAllEmailSubscriptions(): any {
     return this.http.get(
-      'http://api.jahantebkhoram.ir/api/v1/admin/getEmailSubscription'
+      'https://api.jahantebkhoram.ir/api/v1/admin/getEmailSubscription'
     );
   }
   getAllSmsSubscriptions(): any {
     return this.http.get(
-      'http://api.jahantebkhoram.ir/api/v1/admin/getSmsSubscription'
+      'https://api.jahantebkhoram.ir/api/v1/admin/getSmsSubscription'
     );
   }
   deleteSmsSubscription(id: any): any {
     return this.http.delete(
-      'http://api.jahantebkhoram.ir/api/v1/admin/deleteEmailSubscription/' + id
+      'https://api.jahantebkhoram.ir/api/v1/admin/deleteEmailSubscription/' + id
     );
   }
   deleteEmailSubscription(id: any): any {
     return this.http.delete(
-      'http://api.jahantebkhoram.ir/api/v1/admin/deleteContactUs/' + id
+      'https://api.jahantebkhoram.ir/api/v1/admin/deleteContactUs/' + id
     );
   }
   //#endregion
 
   //#region Faqs
   getAllFaqs(): any {
-    return this.http.get('http://api.jahantebkhoram.ir/api/v1/admin/getAllFaq');
+    return this.http.get('https://api.jahantebkhoram.ir/api/v1/admin/getAllFaq');
   }
   addFaq(data: any): any {
     return this.http.post(
-      'http://api.jahantebkhoram.ir/api/v1/admin/registerFaq',
+      'https://api.jahantebkhoram.ir/api/v1/admin/registerFaq',
       data
     );
   }
   deleteFaq(id: any): any {
     return this.http.delete(
-      'http://api.jahantebkhoram.ir/api/v1/admin/deleteFaq/' + id
+      'https://api.jahantebkhoram.ir/api/v1/admin/deleteFaq/' + id
     );
   }
   //#endregion
@@ -336,18 +336,18 @@ export class AdminService {
   //#region Catalog
   getCatalog(): any {
     return this.http.get(
-      'http://api.jahantebkhoram.ir/api/v1/admin/getCatalog'
+      'https://api.jahantebkhoram.ir/api/v1/admin/getCatalog'
     );
   }
   addCatalog(data: any): any {
     return this.http.post(
-      'http://api.jahantebkhoram.ir/api/v1/admin/registerCatalog',
+      'https://api.jahantebkhoram.ir/api/v1/admin/registerCatalog',
       data
     );
   }
   deleteCatalog(id: any): any {
     return this.http.delete(
-      'http://api.jahantebkhoram.ir/api/v1/admin/deleteCatalog/' + id
+      'https://api.jahantebkhoram.ir/api/v1/admin/deleteCatalog/' + id
     );
   }
   //#endregion
