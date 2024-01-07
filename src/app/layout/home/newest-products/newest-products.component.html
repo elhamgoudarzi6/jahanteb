@@ -1,0 +1,38 @@
+
+<section class="container-fluid">
+  <div class="pricing" data-aos="fade-up">
+
+    <header class="section-header">
+      <h2>جدیدترین محصولات</h2>
+    </header>
+
+    <owl-carousel-o [options]="customOptions">
+
+      <ng-template carouselSlide *ngFor="let i of newestProduct">
+        <div class="box">
+          <div class="badges" *ngIf="i['discountStatus']===true">%{{i['Discount'][0].discountPercent}}</div>
+          <div class="badges" *ngIf="i['discountStatus']===false">جدید</div>
+          <!-- <div class="actions-list">
+            <a class="action"><i class="pi pi-eye"></i></a>
+            <a class="action"><i class="pi pi-bookmark"></i></a>
+            <a class="action"><i class="pi pi-heart"></i></a>
+          </div> -->
+            <img [src]="i['image']" class="img-fluid" [alt]="i['imageDescription']">
+            <div class="category d-flex flex-row">
+              <div class="ml-auto">{{i['Category'][0].title}}</div>
+              <div>{{i['SubCategory'][0].title}}</div>
+            </div>
+            <div class="title d-flex flex-row"><a [routerLink]="['product-detail',i['_id']]"><h5>{{i['title']}}</h5></a>
+           
+          </div>
+          <a [routerLink]="['product-detail',i['_id']]" class="btn-buy">
+            <span>مشاهده جزییات</span>
+            <i class="pi pi-angle-left"></i>
+          </a>
+        </div>
+      </ng-template>
+
+    </owl-carousel-o>
+
+  </div>
+</section>

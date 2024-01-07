@@ -1,0 +1,116 @@
+<section class="footer-bg">
+  <div class="container">
+    <div class="row justify-content-center">
+
+      <div class="col-sm-4">
+        <h5 class="footer-sec">درباره جهان طب خرم</h5>
+        <p class="footer-sec-about">
+          شرکت جهان طب خرم به همراه  گنجینه 15 سال تجربه امور تولید و واردات و توزیع محصولات پزشکی که در راستای پیشبرد سلامت جامعه تشکیل شده است .با استفاده از بکارگیری آخرین روش های نوین در دانش بازرگانی و تولیدوتوزیع تجهیزات پزشکی با در نظر گرفتن شرایط بین المللی و بازار ایران فعالیت خود در قالب تولید پک های جراحی یکبارمصرف بیمارستانی و گان جراح و البسه یکبار مصرف بیمارستانی و ملحفه و روبالشی بیمارستانی آغاز نموده است
+        </p>
+      </div>
+
+
+      <div class="col-sm">
+        <h5 class="footer-sec">دسته بندی محصولات</h5>
+        <ul class="footer-sec-detail">
+          <li *ngFor="let i of category">
+            <a  (click)="goProduct(i._id, 0)">
+              <i class="fas fa-chevron-left ml-3"></i> {{i['title']}}
+            </a>
+
+            <!-- <i class="fa fa-angle-left ml-2"></i>
+            {{i['title']}} -->
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-sm">
+        <h5 class="footer-sec">دسترسی سریع</h5>
+        <ul class="footer-sec-detail">
+          <li>
+            <i class="fa fa-angle-left ml-2"></i>
+           <a [routerLink]="['/']"> صفحه اصلی</a>
+          </li>
+          <li>
+            <i class="fa fa-angle-left ml-2"></i>
+            <a [routerLink]="['/products/0/0']">محصولات</a>
+          </li>
+          <li>
+            <i class="fa fa-angle-left ml-2"></i>
+            <a [routerLink]="['/faq']">سوالات متداول</a>
+          </li>
+          <li>
+            <i class="fa fa-angle-left ml-2"></i>
+            <a [routerLink]="['/news']">اخبار</a>
+          </li>
+          <li>
+            <i class="fa fa-angle-left ml-2"></i>
+            <a [routerLink]="['/about']">درباره ما</a>
+          </li>
+          <li>
+            <i class="fa fa-angle-left ml-2"></i>
+            <a [routerLink]="['/contact']">تماس با ما</a>
+          </li>
+        </ul>
+      </div>
+
+
+      <div class="col-sm-4">
+        <h5 class="footer-sec">راه های ارتباطی</h5>
+        <ul class="footer-sec-detail">
+          <li>
+            <i class="fas fa-map-marker-alt fa-lg ml-2"></i>
+            خرم آباد، شهرک صنعتی شماره 2 خیابان ابتکار 1         </li>
+          <li>
+            <i class="fa fa-phone fa-lg ml-2"></i>
+            <a href="tel:06633411975">06633411975 - 06633411976</a>
+          </li>
+          <li>
+            <i class="fas fa-fax fa-lg ml-2"></i>
+            <a href="">066-33415103</a>
+          </li>
+          <li>
+            <i class="fa fa-mobile fa-lg ml-2"></i>
+            <a href="">09910179729</a>
+          </li>
+          <li>
+            <i class="fa fa-envelope fa-lg ml-2"></i>
+            <a href="mailto:info@jahantebkhoram.com">info@jahantebkhoram.com</a>
+          </li>
+        </ul>
+        <div class="social-links" >
+          <a>
+            <i class="fab fa-lg fa-google-plus-g"></i>
+          </a>
+          <a>
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="http://www.facebook.com/jahantebkhoram">
+            <i class="fab fa-lg fa-facebook-f"></i>
+          </a>
+          <a href="http://www.linkedin.com/in/jahantebkhoram">
+            <i class="fab fa-lg fa-linkedin-in"></i>
+          </a>
+          <a href="http://instagram.com/jahantebkhoram">
+            <i class="fab fa-lg fa-instagram"></i>
+          </a>
+          </div>
+      </div>
+
+
+    </div>
+
+  </div>
+</section>
+
+  <section class="copy-bg">
+        <div class="copyright">
+          &copy; <strong>کلیه حقوق این وب سایت متعلق به <span> شرکت جهان طب خرم</span> می باشد </strong>
+        </div>
+        <div class="credits">
+         طراحی و پیاده سازی توسط <a href="https://apprad.ir/">شرکت ایده پردازان پارس آراد</a>
+    </div>
+  </section>
+
+
+

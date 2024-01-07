@@ -1,0 +1,104 @@
+
+.container{
+  text-align:center;
+padding: 30px 0;
+}
+.doctors {
+  background-color: #f9fafc;
+
+}
+.section-title p{
+  margin-bottom: 25px;
+}
+.doctors .member {
+  position: relative;
+  box-shadow: 0px 2px 15px rgba(44, 73, 100, 0.08);
+  padding: 30px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.doctors .member .pic {
+  overflow: hidden;
+  width: 180px;
+  border-radius: 50%;
+}
+
+.doctors .member .pic img {
+  transition: ease-in-out 0.3s;
+}
+
+.doctors .member:hover img {
+  transform: scale(1.1);
+}
+
+.doctors .member .member-info {
+  padding-left: 30px;
+}
+
+.doctors .member h4 {
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 18px;
+ color: #08404f;
+
+}
+
+.doctors .member span {
+  display: block;
+  font-size: 15px;
+  padding-bottom: 10px;
+  position: relative;
+  font-weight: 400;
+
+}
+
+.doctors .member span::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100px;
+  height: 1px;
+  background: #0cb1c0;
+  bottom: 0;
+  right: 30%;
+}
+
+.doctors .member p {
+  margin: 10px 30px 0 0;
+  font-size: 14px;
+  font-family: 'IRANSans_Light' !important;
+
+}
+
+.doctors .member .social {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content:flex-end;
+}
+
+.doctors .member .social a {
+  transition: ease-in-out 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  width: 32px;
+  height: 32px;
+  background: #0cb1c0;
+}
+
+.doctors .member .social a i {
+  color: #fff;
+  font-size: 16px;
+  margin:0 2px;
+}
+
+.doctors .member .social a:hover {
+  background: #0cb1c0;
+}
+
+.doctors .member .social a + a {
+  margin-left: 8px;
+}

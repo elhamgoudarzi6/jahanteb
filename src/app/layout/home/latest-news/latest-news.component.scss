@@ -1,0 +1,104 @@
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.header-title {
+  margin-bottom: 0;
+  font-size: 20px;
+ }
+.header-title+.divider {
+  margin-right: 16px;
+  margin-left: 16px;
+ }
+.divider {
+  flex-grow: 1;
+  height: 1px;
+  background: #d8d7d7;
+}
+.btn-all{
+  font-size: 16px;
+  color:#0cb1c0;
+}
+.blogs{
+  text-align:right;
+}
+.blogs .box{
+  background-color: #fff;
+  padding: 15px;
+  transition: 0.3s;
+  margin-top: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+
+}
+.blogs .box:hover{
+  transform: scale(1.05);
+  box-shadow: 0px 0 20px rgba(1, 41, 112, 0.1);
+  z-index: 9999999!important;
+}
+.blogs .box .post-item p{
+  font-family: 'IRANSans_Light' !important;
+
+}
+.blogs .box img {
+  width: 140px;
+  float: right;
+  margin-left: 20px;
+}
+.blogs .box h4 {
+  font-size: 16px;
+  margin-right: 50px;
+  font-weight: bold;
+}
+
+.blogs .box h4 a {
+  color: #0cb1c0;
+  transition: 0.3s;
+}
+
+.blogs .box  h4 a:hover {
+  color: #0cb1c0;
+}
+
+.blogs .box .blogs-meta {
+  float: left;
+  color: #0cb1c0;
+  margin-top: 10px;
+
+}
+
+.blogs .box .blogs-meta ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.blogs .box .blogs-meta ul li + li {
+  padding-left: 20px;
+}
+
+.blogs .box .blogs-meta i {
+  font-size: 14px;
+  margin-left: 4px;
+  line-height: 0;
+
+}
+
+.blogs .box .blogs-meta a {
+  font-family: 'IRANSans_Light' !important;
+}
+
+
+
+
+
+
+
+
+
+
+
